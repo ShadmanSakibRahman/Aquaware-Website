@@ -88,9 +88,10 @@ button, input, textarea {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0.9rem 2rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.9rem calc((100% - 1200px) / 2 + 2rem);
   background: rgba(228, 244, 251, 0.72);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,0.55);
@@ -238,7 +239,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   margin-top: 3.5rem;
   position: relative;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
   transition: transform 400ms var(--ease-fluid);
@@ -248,11 +249,15 @@ h3 { font-size: 1.1rem; font-weight: 600; }
 
 .hero-inner {
   padding: clamp(2rem, 4vw, 3.5rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-inner h1 {
   margin-top: 0.4rem;
-  max-width: 16ch;
+  max-width: 20ch;
 }
 
 .hero-sub {
@@ -267,6 +272,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 1.4rem;
+  justify-content: center;
 }
 
 .pill {
@@ -284,15 +290,12 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.8rem;
+  justify-content: center;
 }
 
 /* Hero orb */
 .hero-orb {
-  position: relative;
-  aspect-ratio: 1;
-  max-width: 360px;
-  margin: auto;
-  justify-self: center;
+  display: none;
 }
 .hero-orb span {
   position: absolute;
@@ -627,7 +630,8 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   background: rgba(20, 60, 90, 0.06);
   border-top: 1px solid rgba(255,255,255,0.5);
   margin-top: 0;
-  padding: 3.5rem 1.5rem 1.5rem;
+  padding: 3.5rem calc((100% - 1200px) / 2 + 1.5rem) 1.5rem;
+  width: 100%;
 }
 
 .footer-inner {
