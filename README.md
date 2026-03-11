@@ -1,6 +1,7 @@
 # AquaWare Website
 
 A modern, responsive web platform for **AquaWare** — a data-driven water quality management system designed to help governments monitor and manage industrial discharges effectively.
+n**Live Demo:** [https://shadmansakibrahman.github.io/Aquaware-Website/](https://shadmansakibrahman.github.io/Aquaware-Website/)
 
 Built by **Md. Shadman Sakib Rahman**
 
