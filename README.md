@@ -1,16 +1,75 @@
-# React + Vite
+# AquaWare Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web platform for **AquaWare** — a data-driven water quality management system designed to help governments monitor and manage industrial discharges effectively.
 
-Currently, two official plugins are available:
+Built by **Md. Shadman Sakib Rahman**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Interactive Hero Section** — 3D perspective tilt effect on mouse movement for an engaging first impression
+- **Glassmorphism UI** — Modern frosted-glass design with animated background blobs and noise texture
+- **Centralized Database Overview** — Showcases company profiles, discharge routes, risk scores, permit data, and more
+- **Interactive Dashboards** — Priority lists, business reports, and heatmap visualizations
+- **Solutions Showcase** — Regulation & compliance, policy development, risk assessment, and source detection modules
+- **Funnel-Based Process Flow** — Visual step-by-step breakdown from data collection to prioritization
+- **Contact Form** — Integrated contact section with email, phone, and location details
+- **Newsletter Subscription** — Footer newsletter signup form
+- **Fully Responsive** — Optimized for desktop, tablet, and mobile devices
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** — Component-based UI
+- **Vite** — Fast build tool with HMR
+- **CSS** — Custom styling with glassmorphism, animations, and responsive design
+- **ESLint** — Code quality and linting
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/ShadmanSakibRahman/Aquaware-Website.git
+cd Aquaware-Website
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Opens the app at `http://localhost:5173`
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+├── public/             # Static assets
+├── src/
+│   ├── App.jsx         # Main application component
+│   ├── App.css         # Application styles
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global styles
+├── index.html          # HTML template
+├── vite.config.js      # Vite configuration
+└── package.json        # Dependencies and scripts
+```
+
+## Author
+
+**Md. Shadman Sakib Rahman**
+- GitHub: [@ShadmanSakibRahman](https://github.com/ShadmanSakibRahman)
